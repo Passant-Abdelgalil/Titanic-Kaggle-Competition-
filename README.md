@@ -7,12 +7,13 @@ A notebook that uses Titanic dataset on kaggle to build a predictive model that 
 | Model | Parameters | Acc|
 | ------- | -------- | ----------|
 | Logistic Regression | Defaults with max_iters = 200 | 0.74|
-| GradientBoostingClassifier | Defaults with max_depth = 4 | 0.75|
+| GradientBoostingClassifier | Defaults | 0.78|
 |SVC | Defaults | 0.69|
 
 # Score 🏆
-| Acc     |     0.76|
+| Rank  🏅   | TOP 22%|
 |---------|---------|
+| Acc  🎯   |  0.78   |
 
 # Machine Learning Workflow 3️⃣🔄
 1. Data Exploration 🔎
@@ -31,6 +32,7 @@ A notebook that uses Titanic dataset on kaggle to build a predictive model that 
         * create Family Size, = Parch + SibSp +1
         * create FSize as a categorical value [single, small, Mid, Large]
         * create weightedFare = pow(Fare,i) where i is in [4,3,2]
+        * map Name values to ['Mr', 'Mrs', 'Miss', 'Master']
 3.  Model Building ⚖️
     * split data to train, test with ratios 70%, 30% respectively
     * build the models stated above
