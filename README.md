@@ -17,8 +17,8 @@ A notebook that uses Titanic dataset on kaggle to build a predictive model that 
 
 # Machine Learning Workflow 3️⃣🔄
 1. Data Exploration 🔎
-    *  Univariant
-    *  Bivariant
+    *  Univariate
+    *  Bivariate
     
 2.  Data Pre-processing 🛠
     1.  Data Cleaning 🚿
@@ -26,7 +26,7 @@ A notebook that uses Titanic dataset on kaggle to build a predictive model that 
         * Fill NaNs in Cabin with most frequent value for each group (grouped by Pclass)
         * Fill NaNs in Embarked with most frequent value 'Southampton'
         * Fill NaNs in Fare with Mean
-        * Drop some columns
+        * Drop Ticket and PassengerId
     2.  Feature Engineering ⚙️
         * map Cabin values to first letter in its value: to be [A,B,C,D,E,F,G,T]
         * create Family Size, = Parch + SibSp +1
@@ -34,7 +34,7 @@ A notebook that uses Titanic dataset on kaggle to build a predictive model that 
         * create weightedFare = pow(Fare,i) where i is in [4,3,2]
         * map Name values to ['Mr', 'Mrs', 'Miss', 'Master']
 3.  Model Building ⚖️
-    * split data to train, test with ratios 70%, 30% respectively
+    * split data to train, test with ratios 80%, 20% respectively
     * build the models stated above
     * fit the model on train
     * evaluate the model on test before submission
