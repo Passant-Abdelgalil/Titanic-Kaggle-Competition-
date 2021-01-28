@@ -1,5 +1,5 @@
-# Titanic-Kaggle-Competition 🛳 🚢 ⚓️
-
+![logo](logo.png)
+<br><br>
 A notebook that uses Titanic dataset on kaggle to build a predictive model that answers the question: “what sorts of people were more likely to survive?, this notebook includes Data Exploration with visualizations, Data Wrangling and Model building. [Competition Link](https://www.kaggle.com/c/titanic/overview)
 
 # Models 🧮
